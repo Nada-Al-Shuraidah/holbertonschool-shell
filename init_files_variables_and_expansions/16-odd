@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd'\n\n' /dev/stdin | cut -d$'\n' -f1
+paste -sd'\n\n' /dev/stdin | cut -d$'\n' -f1- | tr -d '\n' | tr '\0' '\n'
