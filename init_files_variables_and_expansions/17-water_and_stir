@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'water' '01234' <<< "$WATER" | tr 'stir' '01234' | paste -sd+ - | { read a b; echo $((a+b)); } | tr '0123456789' 'bestcholhc'
+tr 'water' '01234' <<< "$WATER" | tr 'stir' '01234' | paste -sd+ - | { read a; read b; echo $((a+b)); } | tr '0123456789' 'bestcholhc'
